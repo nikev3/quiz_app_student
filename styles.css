@@ -1,0 +1,115 @@
+/* CSS Setup */
+/* Bonus 0. Add CSS variables with your project color pallette before applying to elements */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --correct-color: #28a745;
+    --incorrect-color: #dc3545;
+}
+
+/* 1. Select * and set margin and padding to 0, box-sizing to border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Select body and add a background color */
+body {
+    background-color: #f8f9fa;
+}
+
+/* 3. Select the container class: 
+    add a background color 
+    width to 90% 
+    max-width to 400px-1200px 
+    margin to 100px auto 0 
+    padding from your choice of recommended 20px-40px 
+    border-radius optionally to curve your corners 
+*/
+.container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Bonus 2. Add container h1 styling and quiz h2 styling */
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.quiz h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+/* Bonus 1. Select the correct div and add a background color + Select the incorrect div and add a background color */
+.correct {
+    background-color: var(--correct-color);
+}
+
+.incorrect {
+    background-color: var(--incorrect-color);
+}
+
+/* 4. Select the btn class: 
+    add a background color 
+    add a text color 
+    width to 100% 
+    add margin recommended 5px-30px 
+    add padding recommended 5px-30px 
+    optionally: 
+        add a border 
+        add a border-radius 
+        add a cursor 
+        add text-align 
+*/
+.btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Bonus 3. Add on .btn:hover effect */
+.btn:hover {
+    background-color: #0069d9;
+}
+
+/* 5. Select the next-btn div: 
+    add a background color 
+    add a text color 
+    width to ~150px 
+    border to 0 
+    padding to ~10px 
+    margin to 20px auto 0 
+    display to none [we will set this to block later using javascript] 
+    optionally: 
+        add a border-radius 
+        add a cursor 
+        add text-align 
+*/
+#next-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 150px;
+    border: none;
+    padding: 10px;
+    margin: 20px auto 0;
+    display: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}

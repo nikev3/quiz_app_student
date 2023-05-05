@@ -7,23 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Quiz</title>
     <!-- 0. Create and link your CSS file [consider styling using project CSS to make your quiz similar to your project]-->
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- HTML setup: -->
-            <!-- 1. Create a div with the class "container" [this is the container for all the quiz elements] -->
-            <!-- 2. Create an h1 tag with your quiz name inside the container -->
-            <!-- 3. Create a new div with the class "quiz" inside the container [this is the main body of the quiz] -->
-            <!-- 4. Create an h2 with the id of questions inside the quiz div, add text stating this is the question -->
-            <!-- 5. Create a div with the id of answer-buttons inside the quiz div [this is the group of possible answers] -->
-            <!-- 6. Create buttons inside this div for answer options  inside the answer-buttons div -->
-            <!-- 7. Create a button outside of the answers-buttons div (still inside the quiz div) with the id of "next-btn" give it the text "Next" -->
-    
+    <!-- 1. Create a div with the class "container" [this is the container for all the quiz elements] -->
+    <div class="container">
 
+        <!-- 2. Create an h1 tag with your quiz name inside the container -->
+        <h1 id="quizname">Simple Quiz</h1>
+
+        <!-- 3. Create a new div with the class "quiz" inside the container [this is the main body of the quiz] -->
+        <div class="quiz">
+
+            <!-- 4. Create an h2 with the id of questions inside the quiz div, add text stating this is the question -->
+            <h2 id="questions">This is the question.</h2>
+
+            <!-- 5. Create a div with the id of answer-buttons inside the quiz div [this is the group of possible answers] -->
+            <div id="answer-buttons">
+
+                <!-- 6. Create buttons inside this div for answer options  inside the answer-buttons div -->
+                <button class="answer-btn">Answer 1</button>
+                <button class="answer-btn">Answer 2</button>
+                <button class="answer-btn">Answer 3</button>
+                <button class="answer-btn">Answer 4</button>
+
+            </div>
+
+            <!-- 7. Create a button outside of the answers-buttons div (still inside the quiz div) with the id of "next-btn" give it the text "Next" -->
+            <button id="next-btn">Next</button>
+
+        </div>
+
+    </div>
 
     <!-- 0. Create and link your JavaScript file -->
-
+    <script src="quiz.js"></script>
 </body>
 
 </html>
