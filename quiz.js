@@ -1,73 +1,74 @@
-const quizName = "1700s History"; // Example quiz name
+const quizName = "UN Quiz"; // Example quiz name
 const quizTitle = document.getElementById("quizname");
 quizTitle.innerHTML = quizName; // Set the content of the h1 element to the quiz name
 
 
 let questions = [
   {
-    question: "What was the name of the British naval officer who defeated the Spanish Armada in 1588?",
+    question: "Which year was the United Nations founded?",
     answers: [
-      { text: "Francis Drake", correct: true },
-      { text: "Horatio Nelson", correct: false },
-      { text: "Walter Raleigh", correct: false },
-      { text: "Robert Clive", correct: false },
+      { text: "1945", correct: true },
+      { text: "1955", correct: false },
+      { text: "1965", correct: false },
+      { text: "1975", correct: false },
     ],
   },
   {
-    question: "Which country controlled the Philippines during the 1700s?",
+    question: "Which is the main organ of the United Nations responsible for maintaining international peace and security?",
     answers: [
-      { text: "Spain", correct: true },
-      { text: "Portugal", correct: false },
+      { text: "The Security Council", correct: true },
+      { text: "The General Assembly", correct: false },
+      { text: "The International Court of Justice", correct: false },
+      { text: "The Secretariat", correct: false },
+    ],
+  },
+  {
+    question: "Which of the following countries is not a permanent member of the United Nations Security Council?",
+    answers: [
       { text: "France", correct: false },
-      { text: "Netherlands", correct: false },
+      { text: "Japan", correct: true },
+      { text: "China", correct: false },
+      { text: "Russia", correct: false },
     ],
   },
   {
-    question: "Which American colony was founded by William Penn in 1682?",
+    question: "What is the name of the United Nations agency responsible for providing humanitarian aid and development assistance to children worldwide?",
     answers: [
-      { text: "Virginia", correct: false },
-      { text: "Pennsylvania", correct: true },
-      { text: "Maryland", correct: false },
-      { text: "New York", correct: false },
+      { text: "UNICEF", correct: true },
+      { text: "WHO", correct: false },
+      { text: "FAO", correct: false },
+      { text: "UNHCR", correct: false },
     ],
   },
   {
-    question: "Who wrote the influential book 'The Wealth of Nations' in 1776?",
+    question: "Which country was the first to recognize the United Nations as an independent international organization?",
     answers: [
-      { text: "Adam Smith", correct: true },
-      { text: "Karl Marx", correct: false },
-      { text: "John Locke", correct: false },
-      { text: "Thomas Paine", correct: false },
+      { text: "United States", correct: false },
+      { text: "United Kingdom", correct: true },
+      { text: "France", correct: false },
+      { text: "Russia", correct: false },
     ],
   },
   {
-    question: "What was the name of the famous composer who lived from 1756 to 1791?",
+    question: "Which document sets out the fundamental rights and freedoms of all human beings, without distinction of any kind?",
     answers: [
-      { text: "Ludwig van Beethoven", correct: false },
-      { text: "Johann Sebastian Bach", correct: false },
-      { text: "Wolfgang Amadeus Mozart", correct: true },
-      { text: "Franz Joseph Haydn", correct: false },
+      { text: "The Universal Declaration of Human Rights", correct: true },
+      { text: "The United Nations Charter", correct: false },
+      { text: "The Rome Statute of the International Criminal Court", correct: false },
+      { text: "The Convention on the Rights of the Child", correct: false },
     ],
   },
   {
-    question: "What was the name of the French military leader who conquered much of Europe in the late 1700s?",
+    question: "Which United Nations agency is responsible for the protection of refugees and stateless persons worldwide?",
     answers: [
-      { text: "Napoleon Bonaparte", correct: true },
-      { text: "Louis XIV", correct: false },
-      { text: "William III", correct: false },
-      { text: "Frederick the Great", correct: false },
-    ],
-  },
-  {
-    question: "Which American founding father invented bifocal glasses and the lightning rod?",
-    answers: [
-      { text: "Benjamin Franklin", correct: true },
-      { text: "Thomas Jefferson", correct: false },
-      { text: "George Washington", correct: false },
-      { text: "John Adams", correct: false },
+      { text: "UNHCR", correct: true },
+      { text: "UNESCO", correct: false },
+      { text: "UNICEF", correct: false },
+      { text: "WFP", correct: false },
     ],
   },
 ];
+
 
 
 const questionText = document.querySelector("#questions");
